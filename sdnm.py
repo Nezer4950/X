@@ -1,34 +1,23 @@
 import random
 
-class Student:
-    def __init__(self, name, age, year, grade):
-        self.name = name
-        self.age = age
-        self.year = year
-        self.grade = grade
+class Person:
+    pass
 
-    def get_info(self):
-        print(f"Ім'я: {self.name}, Вік: {self.age}, Курс: {self.year}, Середній бал: {self.grade}")
+person1 = Person()
+person1.name = "RENAT"
+person1.surname = "DIDENKUL"
+person1.place_of_birth = "UKRAINE"
 
-    def increase_year(self):
-        self.year += 1
+person2 = Person()
+person2.name = "DANIIL"
+person2.surname = "STRELCHENKO"
+person2.place_of_birth = "UKRAINE"
 
-    def update_grade(self, new_grade):
-        self.grade = (self.grade + new_grade) / 2
-
-student1 = Student("Артем", 21, 2, 88)
-student1.get_info() 
-student1.increase_year()
-student1.get_info() 
-
-student1.update_grade(90)
-student1.get_info()  
-
-student2 = Student("Даніїл", 23, 2, 78)
-student2.get_info() 
+print(f"NAME: {person1.name}, SURNAME: {person1.surname}, PLACE OF BIRTH: {person1.place_of_birth}")
+print(f"NAME: {person2.name}, SURNAME: {person2.surname}, PLACE OF BIRTH: {person2.place_of_birth}") 
  
 n_comp = random.randint(1, 100)
- 
+
 while True:
     n = int(input("ENTER NUMBER FROM 1 TO 100: "))
     if n==n_comp:
