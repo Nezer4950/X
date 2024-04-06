@@ -68,7 +68,7 @@ canvas = Canvas(window, width=500, height=400)
 canvas.pack()
 
 platform = Platform(canvas, 'blue')
-ball = Ball(canvas, platform, 'pink')
+ball = Ball(canvas, platform, 'green')
 
 while True:
     if ball.touch_bottom == False:
